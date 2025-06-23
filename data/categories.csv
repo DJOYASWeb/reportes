@@ -1,0 +1,126 @@
+id_category;name;id_parent
+3;"Joyas de plata por mayor";2
+4;"Anillos de Plata";3
+8;"Aros de Plata";3
+12;ENCHAPADO;2
+14;"Aros Enchapado";12
+15;"Anillos Enchapado";12
+17;ACCESORIOS;2
+19;"Pulseras Enchapado";12
+20;"Pulseras de Plata";3
+21;"Conjuntos de Plata";3
+22;"Colgantes de Plata";3
+23;"Cadenas de Plata";3
+24;"Cadenas Enchapado";12
+25;"Colgantes Enchapado";12
+26;Accesorios;17
+27;"Collares Enchapado";12
+29;"Conjuntos Enchapado";12
+31;"Collares de Plata";3
+32;Navidad;2
+34;"Anillos de Plata Lisa";4
+35;"Anillo Circón";4
+36;"Anillo con Micro Circón";4
+37;"Anillo Lapidado";4
+38;"Anillo Marquesita";4
+39;"Anillo Plata con Oro";4
+40;"Anillo MIDI Falange";4
+41;"Anillos de Compromiso";4
+42;"Aros de Plata Largos";8
+43;"Aros Circón Largo";8
+44;"Aros Marquesita";8
+45;"Aros de Perla";8
+46;"Aros Lapidado";8
+47;"Pulsera de Hombre";20
+48;"Pulsera de Plata";20
+51;"Enchapado en Oro";14
+52;"Enchapado en Plata";14
+53;"Relojes Plata";3
+54;"Tobilleras de Plata";3
+55;"Aros Mapuches";8
+58;JUVENILES;3
+59;Anillos;58
+60;Aros;58
+61;Pulseras;58
+62;Collares;58
+63;Conjunto;58
+64;"Anillos de Hombres";4
+65;"Tobilleras Enchapado";12
+66;"Anillo Piedra Natural";4
+67;"Aros Swarovski Elements";8
+68;"Pulsera Macramé Hilo";20
+69;"Pulsera con Piedra";20
+70;"Aro de Plata Pegados";8
+71;Argollas;8
+72;"Argollas con Colgantes";8
+73;"Aro Circón Pegados";8
+74;"Aros Piedra Natural";8
+75;"Aros Trepadores y Cuff";8
+76;Piercing;8
+77;"Colgante Piedra Natural";22
+78;"Colgante Circón";22
+79;"Colgantes Lapidado";22
+80;"Colgante Cruz";22
+81;"Colgantes Niño Niña";22
+82;"Colgantes de Placa";22
+83;"Colgante Plata Lisa";22
+84;"Cyber DJOYAS";2
+85;"Aros y Conjuntos de Plata";84
+86;"Anillos de Plata";84
+87;"Colgantes de Plata";84
+88;"Collares y Cadenas de Plata";84
+92;"Collares de Piedra";31
+93;"Collares de Plata";31
+94;"Collares con Circón";31
+95;"Pulseras y Tobilleras";84
+96;"Productos Enchapados";84
+97;"DIA DEL PADRE";2
+98;"TOP 100";2
+100;"Swarovski Elements";3
+102;"Colección Primavera";2
+103;Exclusivos;2
+111;LICENCIATURA;2
+112;Hombre;3
+113;"Cadenas de plata de Hombre";112
+114;"Anillos Hombres";112
+115;"Aros Hombre";112
+116;"Pulseras Hombre";112
+117;"Colgantes Hombres";112
+118;"Insumos de Plata";3
+119;"Infantil Plata";3
+120;"Infantil enchapado";12
+122;"Pulsera con Circón";20
+123;Black;2
+124;"Colgante estilo Charms";22
+126;Descuentos;3
+128;"Exclusivos de Plata";103
+129;"Exclusivos Enchapados";103
+130;"Pack de Joyas";3
+131;"Joyas día de la madre";2
+132;"Insumos Enchapados";12
+133;"DJOYAS INSPIRA";2
+134;"Colleras de Plata";112
+136;"Prueba BLACK";123
+137;"Joyas de Mascotas";2
+138;"Colgante de Perla";22
+139;Charlas;133
+140;"Cadena Groumet";23
+141;"Cadena Cartier";23
+142;"Cadena Cinta";23
+143;"Cadena Esferas";23
+144;"Cadena Eslabón";23
+145;"Cadena Gucci";23
+146;"Cadena Rolo";23
+147;"Cadena Singapur";23
+148;"Cadena Topo";23
+150;"Cadena Tourbillon";23
+151;"Cadena Valentino";23
+152;"Cadena Veneciana";23
+153;"Cadena Eslabones";2
+154;Bolsas;17
+155;Cajas;17
+156;Limpiadores;17
+157;Joyeros;17
+158;Limpieza;2
+159;"Sin valor";2
+160;Anillo;2
