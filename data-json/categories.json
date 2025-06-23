@@ -1,0 +1,627 @@
+[
+  {
+    "id_category":3,
+    "name":"Joyas de plata por mayor",
+    "id_parent":2
+  },
+  {
+    "id_category":4,
+    "name":"Anillos de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":8,
+    "name":"Aros de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":12,
+    "name":"ENCHAPADO",
+    "id_parent":2
+  },
+  {
+    "id_category":14,
+    "name":"Aros Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":15,
+    "name":"Anillos Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":17,
+    "name":"ACCESORIOS",
+    "id_parent":2
+  },
+  {
+    "id_category":19,
+    "name":"Pulseras Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":20,
+    "name":"Pulseras de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":21,
+    "name":"Conjuntos de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":22,
+    "name":"Colgantes de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":23,
+    "name":"Cadenas de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":24,
+    "name":"Cadenas Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":25,
+    "name":"Colgantes Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":26,
+    "name":"Accesorios",
+    "id_parent":17
+  },
+  {
+    "id_category":27,
+    "name":"Collares Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":29,
+    "name":"Conjuntos Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":31,
+    "name":"Collares de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":32,
+    "name":"Navidad",
+    "id_parent":2
+  },
+  {
+    "id_category":34,
+    "name":"Anillos de Plata Lisa",
+    "id_parent":4
+  },
+  {
+    "id_category":35,
+    "name":"Anillo Circón",
+    "id_parent":4
+  },
+  {
+    "id_category":36,
+    "name":"Anillo con Micro Circón",
+    "id_parent":4
+  },
+  {
+    "id_category":37,
+    "name":"Anillo Lapidado",
+    "id_parent":4
+  },
+  {
+    "id_category":38,
+    "name":"Anillo Marquesita",
+    "id_parent":4
+  },
+  {
+    "id_category":39,
+    "name":"Anillo Plata con Oro",
+    "id_parent":4
+  },
+  {
+    "id_category":40,
+    "name":"Anillo MIDI Falange",
+    "id_parent":4
+  },
+  {
+    "id_category":41,
+    "name":"Anillos de Compromiso",
+    "id_parent":4
+  },
+  {
+    "id_category":42,
+    "name":"Aros de Plata Largos",
+    "id_parent":8
+  },
+  {
+    "id_category":43,
+    "name":"Aros Circón Largo",
+    "id_parent":8
+  },
+  {
+    "id_category":44,
+    "name":"Aros Marquesita",
+    "id_parent":8
+  },
+  {
+    "id_category":45,
+    "name":"Aros de Perla",
+    "id_parent":8
+  },
+  {
+    "id_category":46,
+    "name":"Aros Lapidado",
+    "id_parent":8
+  },
+  {
+    "id_category":47,
+    "name":"Pulsera de Hombre",
+    "id_parent":20
+  },
+  {
+    "id_category":48,
+    "name":"Pulsera de Plata",
+    "id_parent":20
+  },
+  {
+    "id_category":51,
+    "name":"Enchapado en Oro",
+    "id_parent":14
+  },
+  {
+    "id_category":52,
+    "name":"Enchapado en Plata",
+    "id_parent":14
+  },
+  {
+    "id_category":53,
+    "name":"Relojes Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":54,
+    "name":"Tobilleras de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":55,
+    "name":"Aros Mapuches",
+    "id_parent":8
+  },
+  {
+    "id_category":58,
+    "name":"JUVENILES",
+    "id_parent":3
+  },
+  {
+    "id_category":59,
+    "name":"Anillos",
+    "id_parent":58
+  },
+  {
+    "id_category":60,
+    "name":"Aros",
+    "id_parent":58
+  },
+  {
+    "id_category":61,
+    "name":"Pulseras",
+    "id_parent":58
+  },
+  {
+    "id_category":62,
+    "name":"Collares",
+    "id_parent":58
+  },
+  {
+    "id_category":63,
+    "name":"Conjunto",
+    "id_parent":58
+  },
+  {
+    "id_category":64,
+    "name":"Anillos de Hombres",
+    "id_parent":4
+  },
+  {
+    "id_category":65,
+    "name":"Tobilleras Enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":66,
+    "name":"Anillo Piedra Natural",
+    "id_parent":4
+  },
+  {
+    "id_category":67,
+    "name":"Aros Swarovski Elements",
+    "id_parent":8
+  },
+  {
+    "id_category":68,
+    "name":"Pulsera Macramé Hilo",
+    "id_parent":20
+  },
+  {
+    "id_category":69,
+    "name":"Pulsera con Piedra",
+    "id_parent":20
+  },
+  {
+    "id_category":70,
+    "name":"Aro de Plata Pegados",
+    "id_parent":8
+  },
+  {
+    "id_category":71,
+    "name":"Argollas",
+    "id_parent":8
+  },
+  {
+    "id_category":72,
+    "name":"Argollas con Colgantes",
+    "id_parent":8
+  },
+  {
+    "id_category":73,
+    "name":"Aro Circón Pegados",
+    "id_parent":8
+  },
+  {
+    "id_category":74,
+    "name":"Aros Piedra Natural",
+    "id_parent":8
+  },
+  {
+    "id_category":75,
+    "name":"Aros Trepadores y Cuff",
+    "id_parent":8
+  },
+  {
+    "id_category":76,
+    "name":"Piercing",
+    "id_parent":8
+  },
+  {
+    "id_category":77,
+    "name":"Colgante Piedra Natural",
+    "id_parent":22
+  },
+  {
+    "id_category":78,
+    "name":"Colgante Circón",
+    "id_parent":22
+  },
+  {
+    "id_category":79,
+    "name":"Colgantes Lapidado",
+    "id_parent":22
+  },
+  {
+    "id_category":80,
+    "name":"Colgante Cruz",
+    "id_parent":22
+  },
+  {
+    "id_category":81,
+    "name":"Colgantes Niño Niña",
+    "id_parent":22
+  },
+  {
+    "id_category":82,
+    "name":"Colgantes de Placa",
+    "id_parent":22
+  },
+  {
+    "id_category":83,
+    "name":"Colgante Plata Lisa",
+    "id_parent":22
+  },
+  {
+    "id_category":84,
+    "name":"Cyber DJOYAS",
+    "id_parent":2
+  },
+  {
+    "id_category":85,
+    "name":"Aros y Conjuntos de Plata",
+    "id_parent":84
+  },
+  {
+    "id_category":86,
+    "name":"Anillos de Plata",
+    "id_parent":84
+  },
+  {
+    "id_category":87,
+    "name":"Colgantes de Plata",
+    "id_parent":84
+  },
+  {
+    "id_category":88,
+    "name":"Collares y Cadenas de Plata",
+    "id_parent":84
+  },
+  {
+    "id_category":92,
+    "name":"Collares de Piedra",
+    "id_parent":31
+  },
+  {
+    "id_category":93,
+    "name":"Collares de Plata",
+    "id_parent":31
+  },
+  {
+    "id_category":94,
+    "name":"Collares con Circón",
+    "id_parent":31
+  },
+  {
+    "id_category":95,
+    "name":"Pulseras y Tobilleras",
+    "id_parent":84
+  },
+  {
+    "id_category":96,
+    "name":"Productos Enchapados",
+    "id_parent":84
+  },
+  {
+    "id_category":97,
+    "name":"DIA DEL PADRE",
+    "id_parent":2
+  },
+  {
+    "id_category":98,
+    "name":"TOP 100",
+    "id_parent":2
+  },
+  {
+    "id_category":100,
+    "name":"Swarovski Elements",
+    "id_parent":3
+  },
+  {
+    "id_category":102,
+    "name":"Colección Primavera",
+    "id_parent":2
+  },
+  {
+    "id_category":103,
+    "name":"Exclusivos",
+    "id_parent":2
+  },
+  {
+    "id_category":111,
+    "name":"LICENCIATURA",
+    "id_parent":2
+  },
+  {
+    "id_category":112,
+    "name":"Hombre",
+    "id_parent":3
+  },
+  {
+    "id_category":113,
+    "name":"Cadenas de plata de Hombre",
+    "id_parent":112
+  },
+  {
+    "id_category":114,
+    "name":"Anillos Hombres",
+    "id_parent":112
+  },
+  {
+    "id_category":115,
+    "name":"Aros Hombre",
+    "id_parent":112
+  },
+  {
+    "id_category":116,
+    "name":"Pulseras Hombre",
+    "id_parent":112
+  },
+  {
+    "id_category":117,
+    "name":"Colgantes Hombres",
+    "id_parent":112
+  },
+  {
+    "id_category":118,
+    "name":"Insumos de Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":119,
+    "name":"Infantil Plata",
+    "id_parent":3
+  },
+  {
+    "id_category":120,
+    "name":"Infantil enchapado",
+    "id_parent":12
+  },
+  {
+    "id_category":122,
+    "name":"Pulsera con Circón",
+    "id_parent":20
+  },
+  {
+    "id_category":123,
+    "name":"Black",
+    "id_parent":2
+  },
+  {
+    "id_category":124,
+    "name":"Colgante estilo Charms",
+    "id_parent":22
+  },
+  {
+    "id_category":126,
+    "name":"Descuentos",
+    "id_parent":3
+  },
+  {
+    "id_category":128,
+    "name":"Exclusivos de Plata",
+    "id_parent":103
+  },
+  {
+    "id_category":129,
+    "name":"Exclusivos Enchapados",
+    "id_parent":103
+  },
+  {
+    "id_category":130,
+    "name":"Pack de Joyas",
+    "id_parent":3
+  },
+  {
+    "id_category":131,
+    "name":"Joyas día de la madre",
+    "id_parent":2
+  },
+  {
+    "id_category":132,
+    "name":"Insumos Enchapados",
+    "id_parent":12
+  },
+  {
+    "id_category":133,
+    "name":"DJOYAS INSPIRA",
+    "id_parent":2
+  },
+  {
+    "id_category":134,
+    "name":"Colleras de Plata",
+    "id_parent":112
+  },
+  {
+    "id_category":136,
+    "name":"Prueba BLACK",
+    "id_parent":123
+  },
+  {
+    "id_category":137,
+    "name":"Joyas de Mascotas",
+    "id_parent":2
+  },
+  {
+    "id_category":138,
+    "name":"Colgante de Perla",
+    "id_parent":22
+  },
+  {
+    "id_category":139,
+    "name":"Charlas",
+    "id_parent":133
+  },
+  {
+    "id_category":140,
+    "name":"Cadena Groumet",
+    "id_parent":23
+  },
+  {
+    "id_category":141,
+    "name":"Cadena Cartier",
+    "id_parent":23
+  },
+  {
+    "id_category":142,
+    "name":"Cadena Cinta",
+    "id_parent":23
+  },
+  {
+    "id_category":143,
+    "name":"Cadena Esferas",
+    "id_parent":23
+  },
+  {
+    "id_category":144,
+    "name":"Cadena Eslabón",
+    "id_parent":23
+  },
+  {
+    "id_category":145,
+    "name":"Cadena Gucci",
+    "id_parent":23
+  },
+  {
+    "id_category":146,
+    "name":"Cadena Rolo",
+    "id_parent":23
+  },
+  {
+    "id_category":147,
+    "name":"Cadena Singapur",
+    "id_parent":23
+  },
+  {
+    "id_category":148,
+    "name":"Cadena Topo",
+    "id_parent":23
+  },
+  {
+    "id_category":150,
+    "name":"Cadena Tourbillon",
+    "id_parent":23
+  },
+  {
+    "id_category":151,
+    "name":"Cadena Valentino",
+    "id_parent":23
+  },
+  {
+    "id_category":152,
+    "name":"Cadena Veneciana",
+    "id_parent":23
+  },
+  {
+    "id_category":153,
+    "name":"Cadena Eslabones",
+    "id_parent":2
+  },
+  {
+    "id_category":154,
+    "name":"Bolsas",
+    "id_parent":17
+  },
+  {
+    "id_category":155,
+    "name":"Cajas",
+    "id_parent":17
+  },
+  {
+    "id_category":156,
+    "name":"Limpiadores",
+    "id_parent":17
+  },
+  {
+    "id_category":157,
+    "name":"Joyeros",
+    "id_parent":17
+  },
+  {
+    "id_category":158,
+    "name":"Limpieza",
+    "id_parent":2
+  },
+  {
+    "id_category":159,
+    "name":"Sin valor",
+    "id_parent":2
+  },
+  {
+    "id_category":160,
+    "name":"Anillo",
+    "id_parent":2
+  }
+]
