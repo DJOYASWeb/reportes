@@ -1,47 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard CSV</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard PrestaShop</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Dashboard de Órdenes (CSV)</h1>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>📊 Reportes</h2>
+      <ul>
+        <li onclick="mostrarVista('orders')">Órdenes</li>
+        <li onclick="mostrarVista('products')">Productos</li>
+        <!-- Más pestañas aquí -->
+      </ul>
+    </aside>
 
-  <div class="nav">
-    <button onclick="mostrarVista('orders')">Órdenes</button>
-    <!-- Aquí podrás agregar más botones -->
+    <main class="main-content">
+      <!-- Órdenes -->
+      <section id="vista-orders" class="vista-activa">
+        <h1>Órdenes</h1>
+        <div class="summary">
+          <p>Total órdenes: <span id="total-orders">0</span></p>
+          <p>Ingresos totales: $<span id="total-income">0</span></p>
+        </div>
+        <table id="orders-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Referencia</th>
+              <th>Cliente</th>
+              <th>Monto</th>
+              <th>Método</th>
+              <th>Estado</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <!-- Productos (proximamente) -->
+      <section id="vista-products" class="vista-oculta">
+        <h1>Productos</h1>
+        <p>Próximamente.</p>
+      </section>
+    </main>
   </div>
 
-  <!-- Vista Órdenes -->
-  <div id="vista-orders" class="vista-activa">
-    <h2>Órdenes</h2>
-    <div class="summary">
-      <p>Total de órdenes: <span id="total-orders">0</span></p>
-      <p>Ingresos totales: $<span id="total-income">0</span></p>
-    </div>
-
-    <table id="orders-table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Referencia</th>
-          <th>Cliente</th>
-          <th>Monto</th>
-          <th>Método</th>
-          <th>Estado</th>
-          <th>Fecha</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Se carga dinámicamente -->
-      </tbody>
-    </table>
-  </div>
-
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="libs/papaparse.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

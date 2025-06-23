@@ -1,8 +1,7 @@
-
-const ORDERS_CSV_URL = 'data/orders.csv';  // ruta local relativa
+const ORDERS_CSV_URL = 'data/orders.csv';
 
 function mostrarVista(vista) {
-  document.querySelectorAll('div[id^="vista-"]').forEach(div => {
+  document.querySelectorAll('section[id^="vista-"]').forEach(div => {
     div.className = 'vista-oculta';
   });
   document.getElementById(`vista-${vista}`).className = 'vista-activa';
@@ -41,7 +40,7 @@ function cargarOrdenesCSV() {
       document.getElementById('total-income').textContent = totalIncome.toFixed(2);
     },
     error: function(err) {
-      console.error('Error al leer el CSV local:', err);
+      console.error('Error al leer el CSV:', err);
     }
   });
 }
