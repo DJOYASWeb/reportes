@@ -1,1 +1,47 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard CSV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dashboard de Órdenes (CSV)</h1>
+
+  <div class="nav">
+    <button onclick="mostrarVista('orders')">Órdenes</button>
+    <!-- Aquí podrás agregar más botones -->
+  </div>
+
+  <!-- Vista Órdenes -->
+  <div id="vista-orders" class="vista-activa">
+    <h2>Órdenes</h2>
+    <div class="summary">
+      <p>Total de órdenes: <span id="total-orders">0</span></p>
+      <p>Ingresos totales: $<span id="total-income">0</span></p>
+    </div>
+
+    <table id="orders-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Referencia</th>
+          <th>Cliente</th>
+          <th>Monto</th>
+          <th>Método</th>
+          <th>Estado</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Se carga dinámicamente -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="libs/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
