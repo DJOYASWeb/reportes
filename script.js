@@ -59,3 +59,26 @@ function cargarOrdenesCSV() {
 
 // Cargar al inicio
 cargarOrdenesCSV();
+cargarClientes();
+
+//clientes
+
+function cargarClientes() {
+  Papa.parse('data/customers.csv', {
+    download: true,
+    header: true,
+    dynamicTyping: true,
+    complete: function(results) {
+      const clientes = results.data;
+      const lista = document.getElementById('lista-clientes');
+      lista.innerHTML = '';
+
+      clientes.forEach(cliente => {
+        if (!cliente.firstname && !cliente.lastname) return;
+        const item = document.createElement('li');
+        item.textContent = `${cliente.firstname} ${cliente.lastname}`;
+        lista.appendChild(item);
+      });
+    }
+  });
+}
