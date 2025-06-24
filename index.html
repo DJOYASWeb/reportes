@@ -50,8 +50,13 @@
       </section>
 
 <section id="vista-clientes" class="vista-oculta">
-  <h1>Clientas</h1>
 
+<div class="tabs-clientas">
+  <button class="tab-btn activo" onclick="mostrarTabClientas('tabla')">Clientas</button>
+  <button class="tab-btn" onclick="mostrarTabClientas('reportes')">Reportes</button>
+</div>
+
+<div id="tab-clientas-tabla" class="contenido-tab-clientas">
   <div class="buscador">
     <input type="text" id="buscador-clientas" placeholder="Buscar por nombre, email o grupo..." />
   </div>
@@ -69,6 +74,26 @@
       <tbody></tbody>
     </table>
   </div>
+</div>
+
+<div id="tab-clientas-reportes" class="contenido-tab-clientas oculto">
+  <div class="reporte-card">
+    <h3>Total de clientas: <span id="reporte-total"></span></h3>
+    <ul id="reporte-grupos"></ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 
