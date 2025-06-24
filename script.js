@@ -285,27 +285,9 @@ function mostrarTabClientas(tab) {
   document.querySelector(`.tab-btn[onclick*="${tab}"]`).classList.add('activo');
   document.getElementById(`tab-clientas-${tab}`).classList.remove('oculto');
 
-  if (tab === 'reportes') {
-    generarReporteClientas();
-  }
 }
 
-function generarReporteClientas() {
-  const total = customersData.length;
-  document.getElementById('reporte-total').textContent = total;
 
-  const grupos = {};
-  customersData.forEach(c => {
-    const grupo = c.id_default_group || 'Sin grupo';
-    grupos[grupo] = (grupos[grupo] || 0) + 1;
-  });
-
-  const lista = Object.entries(grupos).map(([grupo, cantidad]) =>
-    `<li>Grupo ${grupo}: ${cantidad} clienta(s)</li>`
-  ).join('');
-
-  document.getElementById('reporte-grupos').innerHTML = lista;
-}
 function abrirReporte(nombre) {
   alert("Abrir reporte: " + nombre);
 }
