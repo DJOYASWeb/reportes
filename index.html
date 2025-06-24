@@ -77,10 +77,33 @@
 </div>
 
 <div id="tab-clientas-reportes" class="contenido-tab-clientas oculto">
-  <div class="reporte-card">
-    <h3>Total de clientas: <span id="reporte-total"></span></h3>
-    <ul id="reporte-grupos"></ul>
+<div class="grid-reportes">
+  <div class="card-reporte" onclick="abrirReporte('totales')">
+    <div class="icono-reporte">📊</div>
+    <h4>Resumen general</h4>
   </div>
+  <div class="card-reporte" onclick="abrirReporte('top-clientas')">
+    <div class="icono-reporte">🏅</div>
+    <h4>Top clientas</h4>
+  </div>
+  <div class="card-reporte" onclick="abrirReporte('sin-pedidos')">
+    <div class="icono-reporte">🕳️</div>
+    <h4>Sin pedidos</h4>
+  </div>
+  <div class="card-reporte" onclick="abrirReporte('recurrentes')">
+    <div class="icono-reporte">🔁</div>
+    <h4>Recurrentes</h4>
+  </div>
+  <div class="card-reporte" onclick="abrirReporte('inactivas')">
+    <div class="icono-reporte">⏰</div>
+    <h4>Inactivas</h4>
+  </div>
+  <div class="card-reporte" onclick="abrirReporte('grupos')">
+    <div class="icono-reporte">🧩</div>
+    <h4>Por grupos</h4>
+  </div>
+</div>
+
 </div>
 
 
