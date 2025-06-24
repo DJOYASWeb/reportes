@@ -268,7 +268,8 @@ function mostrarFichaClienta(id) {
   `).join('');
 }
 
-
+// Al cargar la vista clientes
+// cargarTodosLosDatos(() => cargarClientes());
 window.addEventListener('click', function (e) {
   const modal = document.getElementById('modal-clienta');
   const contenido = document.querySelector('.modal-contenido');
