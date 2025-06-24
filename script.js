@@ -306,3 +306,6 @@ function generarReporteClientas() {
 
   document.getElementById('reporte-grupos').innerHTML = lista;
 }
+function abrirReporte(nombre) {
+  alert("Abrir reporte: " + nombre);
+}
