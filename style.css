@@ -132,7 +132,7 @@ thead {
 .modal-contenido {
   background: white;
   border-radius: 24px;
-  max-width: 600px;
+  max-width: 1000px;
   width: 90%;
   padding: 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
