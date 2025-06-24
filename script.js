@@ -7,6 +7,12 @@ function mostrarVista(vista) {
   document.getElementById(`vista-${vista}`).className = 'vista-activa';
 }
 
+function formatearCLP(numero) {
+  const monto = parseFloat(numero);
+  if (isNaN(monto)) return '$0';
+  return '$' + monto.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 function cargarOrdenesCSV() {
   Papa.parse(ORDERS_CSV_URL, {
     download: true,
@@ -28,7 +34,7 @@ function cargarOrdenesCSV() {
           <td>${order.id_order}</td>
           <td>${order.reference}</td>
           <td>${order.id_customer}</td>
-          <td>$${parseFloat(order.total_paid).toFixed(2)}</td>
+          <td>${formatearCLP(order.total_paid)}</td>
           <td>${order.payment}</td>
           <td>${order.current_state}</td>
           <td>${new Date(order.date_add).toLocaleDateString()}</td>
