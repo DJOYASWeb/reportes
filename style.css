@@ -116,6 +116,9 @@ thead {
   }
 }
 
+tr:hover {
+    background: #ebebeb;
+}
 
 .modal-ios {
   position: fixed;
