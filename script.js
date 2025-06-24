@@ -70,14 +70,32 @@ function cargarClientes() {
     dynamicTyping: true,
     complete: function(results) {
       const clientes = results.data;
-      const lista = document.getElementById('lista-clientes');
-      lista.innerHTML = '';
+      const tbody = document.querySelector('#tabla-clientas tbody');
+      tbody.innerHTML = '';
 
       clientes.forEach(cliente => {
-        if (!cliente.firstname && !cliente.lastname) return;
-        const item = document.createElement('li');
-        item.textContent = `${cliente.firstname} ${cliente.lastname}`;
-        lista.appendChild(item);
+        if (!cliente.id_customer) return;
+
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${cliente.id_customer}</td>
+          <td>${cliente.firstname} ${cliente.lastname}</td>
+          <td>${cliente.email}</td>
+          <td>${cliente.date_add}</td>
+          <td>${cliente.last_visit}</td>
+        `;
+        tbody.appendChild(fila);
+      });
+
+      // Activar buscador
+      const buscador = document.getElementById('buscador-clientas');
+      buscador.addEventListener('input', function () {
+        const valor = this.value.toLowerCase();
+        const filas = tbody.querySelectorAll('tr');
+        filas.forEach(fila => {
+          const texto = fila.textContent.toLowerCase();
+          fila.style.display = texto.includes(valor) ? '' : 'none';
+        });
       });
     }
   });
