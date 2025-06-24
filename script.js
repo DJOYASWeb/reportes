@@ -79,12 +79,20 @@ function cargarClientes() {
     dynamicTyping: true,
     complete: function(results) {
       const clientes = results.data;
+
+      // Filtrar registros válidos
+      const clientesValidos = clientes.filter(c => c.id_customer && c.date_add);
+
+      // Ordenar por fecha de registro (descendente)
+      clientesValidos.sort((a, b) => new Date(b.date_add) - new Date(a.date_add));
+
+      // Tomar solo los últimos 20
+      const ultimosClientes = clientesValidos.slice(0, 20);
+
       const tbody = document.querySelector('#tabla-clientas tbody');
       tbody.innerHTML = '';
 
-      clientes.forEach(cliente => {
-        if (!cliente.id_customer) return;
-
+      ultimosClientes.forEach(cliente => {
         const fila = document.createElement('tr');
         fila.innerHTML = `
           <td>${cliente.id_customer}</td>
