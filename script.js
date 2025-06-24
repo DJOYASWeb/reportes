@@ -270,10 +270,10 @@ function mostrarFichaClienta(id) {
 
 // Al cargar la vista clientes
 // cargarTodosLosDatos(() => cargarClientes());
+
 window.addEventListener('click', function (e) {
   const modal = document.getElementById('modal-clienta');
-  const contenido = document.querySelector('.modal-contenido');
-  if (!modal.classList.contains('oculto') && !contenido.contains(e.target)) {
+  if (e.target === modal) {
     cerrarModalClienta();
   }
 });
