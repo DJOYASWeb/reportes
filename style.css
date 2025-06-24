@@ -194,3 +194,34 @@ tr:hover {
   color: #888;
   font-weight: 600;
 }
+
+.tabs-clientas {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  background: #f1f1f1;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.tab-btn.activo {
+  background: #fff;
+  border-bottom: 2px solid #000;
+}
+.contenido-tab-clientas {
+  display: none;
+}
+.contenido-tab-clientas:not(.oculto) {
+  display: block;
+}
+.reporte-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
