@@ -309,3 +309,42 @@ function generarReporteClientas() {
 function abrirReporte(nombre) {
   alert("Abrir reporte: " + nombre);
 }
+
+
+function abrirReporte(nombre) {
+  document.querySelector('.grid-reportes').classList.add('oculto');
+  document.getElementById('contenedor-reporte').classList.remove('oculto');
+
+  if (nombre === 'totales') generarResumenGeneral();
+  else document.getElementById('contenido-reporte').innerHTML = `<p>Reporte "${nombre}" aún no implementado.</p>`;
+}
+
+function cerrarReporte() {
+  document.querySelector('.grid-reportes').classList.remove('oculto');
+  document.getElementById('contenedor-reporte').classList.add('oculto');
+  document.getElementById('contenido-reporte').innerHTML = '';
+}
+
+
+function generarResumenGeneral() {
+  const total = customersData.length;
+  const conPedidos = new Set(ordersData.map(p => p.id_customer));
+  const sinPedidos = customersData.filter(c => !conPedidos.has(c.id_customer)).length;
+
+  const grupos = {};
+  customersData.forEach(c => {
+    const grupo = c.id_default_group || 'Sin grupo';
+    grupos[grupo] = (grupos[grupo] || 0) + 1;
+  });
+
+  const lista = Object.entries(grupos).map(([g, n]) => `<li>Grupo ${g}: ${n} clientas</li>`).join('');
+
+  document.getElementById('contenido-reporte').innerHTML = `
+    <h3>Resumen general</h3>
+    <p>Total clientas: <strong>${total}</strong></p>
+    <p>Con pedidos: <strong>${conPedidos.size}</strong></p>
+    <p>Sin pedidos: <strong>${sinPedidos}</strong></p>
+    <h4>Distribución por grupo:</h4>
+    <ul>${lista}</ul>
+  `;
+}
