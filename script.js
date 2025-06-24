@@ -77,34 +77,27 @@ function cargarClientes() {
     download: true,
     header: true,
     dynamicTyping: true,
+    delimiter: ";", // Muy importante con tu CSV
     complete: function(results) {
       const clientes = results.data;
 
-      // Filtrar registros válidos
-      const clientesValidos = clientes.filter(c => c.id_customer && c.date_add);
-
-      // Ordenar por fecha de registro (descendente)
-      clientesValidos.sort((a, b) => new Date(b.date_add) - new Date(a.date_add));
-
-      // Tomar solo los últimos 20
-      const ultimosClientes = clientesValidos.slice(0, 20);
+      const clientesValidos = clientes.filter(c => c.id_customer && c.firstname);
+      const ultimos = clientesValidos.slice(-20).reverse();
 
       const tbody = document.querySelector('#tabla-clientas tbody');
       tbody.innerHTML = '';
 
-      ultimosClientes.forEach(cliente => {
+      ultimos.forEach(cliente => {
         const fila = document.createElement('tr');
         fila.innerHTML = `
           <td>${cliente.id_customer}</td>
           <td>${cliente.firstname} ${cliente.lastname}</td>
           <td>${cliente.email}</td>
-          <td>${cliente.date_add}</td>
-          <td>${cliente.last_visit}</td>
+          <td>${cliente.id_default_group}</td>
         `;
         tbody.appendChild(fila);
       });
 
-      // Activar buscador
       const buscador = document.getElementById('buscador-clientas');
       buscador.addEventListener('input', function () {
         const valor = this.value.toLowerCase();
@@ -117,3 +110,4 @@ function cargarClientes() {
     }
   });
 }
+
