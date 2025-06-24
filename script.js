@@ -19,6 +19,7 @@ function mostrarVista(vista) {
   }
 }
 
+let ordersData = [], orderDetailsData = [], productsData = [], customersData = [];
 
 function cargarOrdenesCSV() {
   Papa.parse(ORDERS_CSV_URL, {
@@ -120,7 +121,7 @@ function formatearCLP(numero) {
 }
 
 
-let ordersData = [], orderDetailsData = [], productsData = [], customersData = [];
+
 
 function formatearCLP(numero) {
   const monto = parseFloat(numero);
