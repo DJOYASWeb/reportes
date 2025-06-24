@@ -51,16 +51,18 @@
 <section id="vista-clientes" class="vista-oculta">
   <h1>Clientas</h1>
 
-  <input type="text" id="buscador-clientas" placeholder="Buscar clientas..." />
+  <div class="buscador">
+    <input type="text" id="buscador-clientas" placeholder="Buscar por nombre, email, etc." />
+  </div>
 
   <div class="tabla-responsive">
-    <table id="tabla-clientas">
+    <table id="tabla-clientas" class="tabla-estilo-ios">
       <thead>
         <tr>
           <th>ID</th>
           <th>Nombre</th>
           <th>Email</th>
-          <th>Fecha registro</th>
+          <th>Registrada</th>
           <th>Última conexión</th>
         </tr>
       </thead>
