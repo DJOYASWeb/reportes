@@ -10,8 +10,17 @@ function mostrarVista(vista) {
   document.querySelectorAll('section[id^="vista-"]').forEach(div => {
     div.className = 'vista-oculta';
   });
-  document.getElementById(`vista-${vista}`).className = 'vista-activa';
+  const seccion = document.getElementById(`vista-${vista}`);
+  seccion.className = 'vista-activa';
+
+  // Cargar datos solo cuando se abre la vista correspondiente
+  if (vista === 'clientes') {
+    cargarClientes();
+  } else if (vista === 'orders') {
+    cargarOrdenesCSV();
+  }
 }
+
 
 function cargarOrdenesCSV() {
   Papa.parse(ORDERS_CSV_URL, {
