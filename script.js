@@ -308,6 +308,13 @@ function cerrarReporte() {
 }
 
 
+function cerrarReporte() {
+  document.querySelector('.grid-reportes').classList.remove('oculto');
+  document.getElementById('contenedor-reporte').classList.add('oculto');
+  document.getElementById('contenido-reporte').innerHTML = '';
+}
+
+
 function generarResumenGeneral() {
   const total = customersData.length;
   const conPedidos = new Set(ordersData.map(p => p.id_customer));
