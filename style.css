@@ -160,12 +160,18 @@ thead {
 }
 .cerrar-modal {
   position: absolute;
-  top: 16px;
-  right: 20px;
-  font-size: 24px;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
   cursor: pointer;
   color: #666;
+  z-index: 10;
+  transition: 0.2s;
 }
+.cerrar-modal:hover {
+  color: #000;
+}
+
 .oculto {
   display: none;
 }
