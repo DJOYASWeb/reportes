@@ -111,3 +111,12 @@ function cargarClientes() {
   });
 }
 
+function cerrarModalClienta() {
+  document.getElementById("modal-clienta").classList.add("oculto");
+}
+
+function formatearCLP(numero) {
+  const monto = parseFloat(numero);
+  if (isNaN(monto)) return '$0';
+  return '$' + monto.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
