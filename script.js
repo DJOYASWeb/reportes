@@ -337,3 +337,79 @@ function generarResumenGeneral() {
     <ul>${lista}</ul>
   `;
 }
+
+let filtrosActivos = [];
+
+function mostrarFormularioFiltro() {
+  document.getElementById('formulario-filtro').classList.remove('oculto');
+}
+
+function cancelarFiltro() {
+  document.getElementById('formulario-filtro').classList.add('oculto');
+  document.getElementById('valor-filtro').value = '';
+}
+
+function guardarFiltro() {
+  const tipo = document.getElementById('tipo-filtro').value;
+  const valor = document.getElementById('valor-filtro').value.trim();
+
+  // Para filtros como "conPedidos" o "sinPedidos", no se necesita valor
+  if ((tipo === 'grupo' && !valor) || (!tipo)) return alert('Completa el filtro');
+
+  filtrosActivos.push({ tipo, valor });
+  renderizarFiltros();
+  filtrarTablaClientas();
+  cancelarFiltro();
+}
+
+function eliminarFiltro(index) {
+  filtrosActivos.splice(index, 1);
+  renderizarFiltros();
+  filtrarTablaClientas();
+}
+
+function renderizarFiltros() {
+  const contenedor = document.getElementById('chips-filtros');
+  contenedor.innerHTML = filtrosActivos.map((filtro, i) => {
+    let texto = '';
+    if (filtro.tipo === 'grupo') texto = `Grupo: ${filtro.valor}`;
+    if (filtro.tipo === 'conPedidos') texto = `Con pedidos`;
+    if (filtro.tipo === 'sinPedidos') texto = `Sin pedidos`;
+
+    return `<div class="chip">${texto} <button onclick="eliminarFiltro(${i})">×</button></div>`;
+  }).join('');
+}
+
+function filtrarTablaClientas() {
+  const tbody = document.querySelector('#tabla-clientas tbody');
+  tbody.innerHTML = '';
+
+  let filtradas = [...customersData];
+
+  filtrosActivos.forEach(f => {
+    if (f.tipo === 'grupo') {
+      filtradas = filtradas.filter(c => (c.id_default_group || '') === f.valor);
+    }
+    if (f.tipo === 'conPedidos') {
+      const conPedidos = new Set(ordersData.map(o => o.id_customer));
+      filtradas = filtradas.filter(c => conPedidos.has(c.id_customer));
+    }
+    if (f.tipo === 'sinPedidos') {
+      const conPedidos = new Set(ordersData.map(o => o.id_customer));
+      filtradas = filtradas.filter(c => !conPedidos.has(c.id_customer));
+    }
+  });
+
+  filtradas.slice(0, 20).forEach(cliente => {
+    const fila = document.createElement('tr');
+    fila.innerHTML = `
+      <td>${cliente.id_customer}</td>
+      <td>${cliente.firstname} ${cliente.lastname}</td>
+      <td>${cliente.email}</td>
+      <td>${cliente.id_default_group}</td>
+      <td>${cliente.date_add?.split(' ')[0] || ''}</td>
+    `;
+    fila.addEventListener('click', () => mostrarFichaClienta(cliente.id_customer));
+    tbody.appendChild(fila);
+  });
+}

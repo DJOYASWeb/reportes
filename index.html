@@ -61,6 +61,29 @@
     <input type="text" id="buscador-clientas" placeholder="Buscar por nombre, email o grupo..." />
   </div>
 
+<div id="barra-filtros" class="barra-filtros">
+  <div id="chips-filtros" class="chips-filtros"></div>
+  <button class="btn-filtro" onclick="mostrarFormularioFiltro()">+ Agregar filtro</button>
+</div>
+
+<div id="formulario-filtro" class="formulario-filtro oculto">
+  <label for="tipo-filtro">Tipo de filtro:</label>
+  <select id="tipo-filtro">
+    <option value="grupo">Grupo</option>
+    <option value="conPedidos">Con pedidos</option>
+    <option value="sinPedidos">Sin pedidos</option>
+  </select>
+
+  <div id="valor-filtro-wrapper">
+    <label for="valor-filtro">Valor:</label>
+    <input type="text" id="valor-filtro" placeholder="Ej: A" />
+  </div>
+
+  <button onclick="guardarFiltro()">Guardar</button>
+  <button onclick="cancelarFiltro()">Cancelar</button>
+</div>
+
+
   <div class="tabla-responsive">
     <table id="tabla-clientas" class="tabla-estilo-ios">
       <thead>
@@ -75,6 +98,8 @@
     </table>
   </div>
 </div>
+
+
 
 <div id="tab-clientas-reportes" class="contenido-tab-clientas oculto">
 <div class="grid-reportes">
